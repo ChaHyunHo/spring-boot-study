@@ -38,13 +38,14 @@ pom.xml (dependencies, dependencyManagement)
 		</dependencies>
 	</dependencyManagement> 
 	
+---------------------------------------------------------------------------------------------------------------------------------------------
+서비스 제공자
 resources/META-INF/spring.factories
 
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\   (EnableAutoConfiguration켜져 있으면) 이 키에해당하는 밑에 값을 빈으로 설정
  com.camel.HolomanConfiguration
  
- 
- 
+--------------------------------------------------------------------------------------------------------------------------------------------- 
  
 HolomanConfiguration Class 
  
@@ -54,7 +55,7 @@ public class HolomanConfiguration {
 	
 	@Bean
 	@ConditionalOnMissingBean // 사용하는 쪽에서 해당 빈이있다면 그 빈으로 사용되게 하는 어노테이션
-	public Holoman holoman(HolomanProperties properties) {
+	public Holoman holoman(HolomanProperties properties) { // 빈을 사용하게 될때 해당 프로젝트에서 프로퍼티로 설정하면 HolomanProperies클래스에 멤버변수에 입력됨 
 		Holoman holoman = new Holoman();
 		holoman.setHowLong(properties.getHowLong());
 		holoman.setName(properties.getName());
@@ -62,6 +63,60 @@ public class HolomanConfiguration {
 	}
 
 }
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Holoman Class
+
+public class Holoman {
+	
+	String name;
+	int howLong;
+	
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getHowLong() {
+		return howLong;
+	}
+	public void setHowLong(int howLong) {
+		this.howLong = howLong;
+	}
+	
+	@Override
+	public String toString() {
+		return "Holoman [name=" + name + ", howLong=" + howLong + "]";
+	}
+	
+
+}
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+@ConfigurationProperties("holoman") // 사용하게될 프로젝트에서 프로퍼티로 활용할 수 있음
+public class HolomanProperties {
+	String name;
+	int howLong;
+	
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getHowLong() {
+		return howLong;
+	}
+	public void setHowLong(int howLong) {
+		this.howLong = howLong;
+	}
+
+}
+
+---------------------------------------------------------------------------------------------------------------------------------------------
 
 ```
 
