@@ -131,5 +131,7 @@ pom.xml   // 메이븐 프로젝트를 터미널에서 mvn install하여 로컬�
 
 ```
 
-<a href="https://github.com/ChaHyunHo/spring-boot-study/blob/0a63af1ee68ec2e438e41426cc2d9e2fded684db/src/main/resources/application.properties#L1">프로젝트 프로퍼티 설정
+#### <a href="https://github.com/ChaHyunHo/spring-boot-study/blob/0a63af1ee68ec2e438e41426cc2d9e2fded684db/src/main/resources/application.properties#L1">프로젝트 프로퍼티 설정
 
+
+#### <a href="https://github.com/ChaHyunHo/spring-boot-study/blob/59677da9509f81d184c3a5b39109c32ecd35a7d1/src/main/java/com/camel/camel_boot_ex/CamelBootEx1Application.java#L79">메이븐 사용<a>
