@@ -1,24 +1,29 @@
 package com.camel.camel_boot_ex;
 
-import java.io.IOException;
-
-import org.apache.catalina.LifecycleException;
 import org.springframework.boot.SpringApplication;
-import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 // @SpringBootConfiguration
 // @Configuration
 // @ComponentScan
 // @EnableAutoConfiguration
 @SpringBootApplication
+@RestController
 public class CamelBootEx1Application {
-
-	public static void main(String[] args) throws IOException, LifecycleException {
+	
+	@GetMapping("/hello")
+	public String hello() {
+		return "Hello Spring";
+	}
+	
+	public static void main(String[] args) {
 		SpringApplication application = new SpringApplication(CamelBootEx1Application.class);
-			application.setWebApplicationType(WebApplicationType.NONE);
-			application.run(args);
-			// SpringApplication.run(CamelBootEx1Application.class, args);
+			// application.setWebApplicationType(WebApplicationType.NONE);
+			// application.run(args);
+			SpringApplication.run(CamelBootEx1Application.class, args);
+			
 		/*
 		  스프링 부트는 서버가 아니다.
 		  1. 톰캣 객체를 생성
@@ -65,15 +70,24 @@ public class CamelBootEx1Application {
 		  tomcat.getServer().await();
 		  
 		 */
-		 
-		
 	}
 	
+	// https를 설정하게되면 하나의 컨넥터를 https기 사용하므로 http를 따로 설정해줘야 둘다 사용할 수 있다.
+	/*
+	@Bean
+	public ServletWebServerFactory serverFactory() {
+		TomcatServletWebServerFactory tomcat = new TomcatServletWebServerFactory();
+		tomcat.addAdditionalTomcatConnectors(createStandardConnector());
+		return tomcat;
+	}
 	
-	
-	
-	
-	
+	private  Connector createStandardConnector() {
+		Connector connector = new Connector("org.apache.coyote.http11.Http11NioProtocol");
+		connector.setPort(8080);
+		return connector;
+	}
+	*/
+
 	/*
 	@Bean
 	public Holoman holoman() {
