@@ -159,5 +159,48 @@ pom.xml   // 메이븐 프로젝트를 터미널에서 mvn install하여 로컬�
     15. JAR 안에 있는 application properties 
     16. @PropertySource 
     17. 기본 프로퍼티 (SpringApplication.setDefaultProperties) 
+  	
+  	application.properties 우선 순위 (높은게 낮은걸 덮어 씁니다.) 
+	1. file:./config/ 
+	2. file:./ 
+	3. classpath:/config/ 
+	4. classpath:/ 
+	
+	랜덤값 설정하기 
+	● ${random.*}
+	 
+	플레이스 홀더 
+	● name = hyunho 
+	● fullName = ${name} cha
+	
+	타입-세이프 프로퍼티 @ConfigurationProperties 
+	● 여러 프로퍼티를 묶어서 읽어올 수 있음 
+	
+	● 빈으로 등록해서 다른 빈에 주입할 수 있음 
+		○ @EnableConfigurationProperties 
+		○ @Component 
+		○ @Bean 
+		
+	● 융통성 있는 바인딩 
+		○ context-path (케밥) 
+		○ context_path (언드스코어) 
+		○ contextPath (캐멀) 
+		○ CONTEXTPATH 
+	● 프로퍼티 타입 컨버전 
+		○ @DurationUnit 
+		
+	● 프로퍼티 값 검증 
+		○ @Validated 
+		○ JSR-303 (@NotNull, ...) 
+		
+	● 메타 정보 생성 
+	
+	● @Value 
+		○ SpEL 을 사용할 수 있지만... 
+		○ 위에 있는 기능들은 전부 사용 못합니다. 
+	
+  	  
+    
+  
 	
 
