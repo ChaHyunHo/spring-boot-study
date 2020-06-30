@@ -3,6 +3,7 @@ package com.camel.camel_boot_ex;
 import java.io.PrintStream;
 
 import org.springframework.boot.Banner;
+import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.core.env.Environment;
@@ -31,6 +32,7 @@ public class CamelBootEx1Application {
 		
 		// 빌더로도 할 수 있음.
 		new SpringApplicationBuilder()
+					.web(WebApplicationType.SERVLET) // 어플리케이션 실행시 설정을 하지않는다면 기본으로 SERVLET이 실행됨 
 					.listeners(new StartingListener())
 					.listeners(new StartedListener())  // 어플리케이션 이벤트가 끝난 시점에서 실행
 					.sources(CamelBootEx1Application.class)
