@@ -201,6 +201,13 @@ pom.xml   // 메이븐 프로젝트를 터미널에서 mvn install하여 로컬�
 		○ 위에 있는 기능들은 전부 사용 못합니다. 
 	
   	  
+# 프로파일 
+	@Profile 애노테이션은 어디에? 
+		● @Configuration 
+		● @Component 어떤 프로파일을 활성화 할 것인가? 
+		● spring.profiles.active 어떤 프로파일을 추가할 것인가? 
+		● spring.profiles.include 프로파일용 프로퍼티 
+		● application-{profile}.properties 
     
   
 	
