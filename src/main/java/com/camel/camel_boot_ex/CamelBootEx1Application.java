@@ -1,7 +1,11 @@
 package com.camel.camel_boot_ex;
 
-import org.springframework.boot.SpringApplication;
+import java.io.PrintStream;
+
+import org.springframework.boot.Banner;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.core.env.Environment;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -19,10 +23,43 @@ public class CamelBootEx1Application {
 	}
 	
 	public static void main(String[] args) {
-		SpringApplication application = new SpringApplication(CamelBootEx1Application.class);
-			// application.setWebApplicationType(WebApplicationType.NONE);
-			// application.run(args);
-			SpringApplication.run(CamelBootEx1Application.class, args);
+		//SpringApplication application = new SpringApplication(CamelBootEx1Application.class);
+		// application.setWebApplicationType(WebApplicationType.NONE);
+		// application.setBannerMode(Banner.Mode.OFF); 배너모드 끄기
+		// application.run(args);
+		// SpringApplication.run(CamelBootEx1Application.class, args);
+		
+		// 빌더로도 할 수 있음.
+		new SpringApplicationBuilder()
+					.listeners(new StartingListener())
+					.listeners(new StartedListener())  // 어플리케이션 이벤트가 끝난 시점에서 실행
+					.sources(CamelBootEx1Application.class)
+					.banner(new Banner() {
+						@Override
+						public void printBanner(Environment environment, Class<?> sourceClass, PrintStream out) {
+							out.println("============================");
+							out.println("banner customizing");
+							out.println("============================");
+						}
+					})
+					.run(args);
+		
+		// 배너 커스터 마이징(banner.txt가 존재하면 우선순위에서 밀림)
+		/*
+		application.setBanner(new Banner() {
+			@Override
+			public void printBanner(Environment environment, Class<?> sourceClass, PrintStream out) {
+				out.println("============================");
+				out.println("banner customizing");
+				out.println("============================");
+			}
+		});
+		*/
+
+		
+		
+		
+		
 			
 		/*
 		  스프링 부트는 서버가 아니다.
