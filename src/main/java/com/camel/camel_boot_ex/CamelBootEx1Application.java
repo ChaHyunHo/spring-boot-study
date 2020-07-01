@@ -7,21 +7,13 @@ import org.springframework.boot.WebApplicationType;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.core.env.Environment;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
 
 // @SpringBootConfiguration
 // @Configuration
 // @ComponentScan
 // @EnableAutoConfiguration
 @SpringBootApplication
-@RestController
 public class CamelBootEx1Application {
-	
-	@GetMapping("/hello")
-	public String hello() {
-		return "Hello Spring";
-	}
 	
 	public static void main(String[] args) {
 		//SpringApplication application = new SpringApplication(CamelBootEx1Application.class);

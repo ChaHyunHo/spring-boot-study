@@ -12,8 +12,8 @@ import org.springframework.test.context.junit4.SpringRunner;
 import lombok.extern.log4j.Log4j2;
 
 @RunWith(SpringRunner.class)
-// @TestPropertySource(properties = "name.fullname=testProPertySource") 가장 우선순위 프로퍼티
-@SpringBootTest(properties = {"name.fullname=springBootTest1","name.fullname=springBootTest2" })
+// @TestPropertySource(properties = "name.fullname=testProPertySource") // 가장 우선순위 프로퍼티
+@SpringBootTest(properties ="name.fullname=springBootTest2" )
 @Log4j2
 class CamelBootEx1ApplicationTests {
 	

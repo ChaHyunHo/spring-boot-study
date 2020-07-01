@@ -1,0 +1,23 @@
+2020-07-01 14:44:57 INFO Starting CamelBootEx1Application on DESKTOP-JOUT91I with PID 20392 (C:\spring-tool-suite-4-4.5.1.RELEASE-e4.14.0-win32.win32.x86_64.self-extracting\sts-4.5.1.RELEASE\workspace\camel_boot_ex-1\target\classes started by chamy in C:\spring-tool-suite-4-4.5.1.RELEASE-e4.14.0-win32.win32.x86_64.self-extracting\sts-4.5.1.RELEASE\workspace\camel_boot_ex-1)
+2020-07-01 14:44:57 INFO The following profiles are active: test
+2020-07-01 14:44:58 INFO Tomcat initialized with port(s): 0 (http)
+2020-07-01 14:44:58 INFO Initializing ProtocolHandler ["http-nio-auto-1"]
+2020-07-01 14:44:58 INFO Starting service [Tomcat]
+2020-07-01 14:44:58 INFO Starting Servlet engine: [Apache Tomcat/9.0.36]
+2020-07-01 14:44:58 INFO Initializing Spring embedded WebApplicationContext
+2020-07-01 14:44:58 INFO Root WebApplicationContext: initialization completed in 1077 ms
+2020-07-01 14:44:58 INFO Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-01 14:44:59 INFO Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-07-01 14:44:59 INFO Starting ProtocolHandler ["http-nio-auto-1"]
+2020-07-01 14:44:59 INFO Tomcat started on port(s): 61452 (http) with context path ''
+2020-07-01 14:44:59 INFO ServletWebServerInitializedEvent port number check!! : 61452
+2020-07-01 14:44:59 INFO Started CamelBootEx1Application in 2.174 seconds (JVM running for 3.273)
+2020-07-01 14:44:59 INFO =====================
+2020-07-01 14:44:59 INFO hyunho test
+2020-07-01 14:44:59 INFO chahyunho
+2020-07-01 14:44:59 INFO 42
+2020-07-01 14:44:59 INFO =====================
+2020-07-01 14:44:59 INFO =====================
+2020-07-01 14:44:59 INFO 프로파일 테스트
+2020-07-01 14:44:59 INFO hello test
+2020-07-01 14:44:59 INFO =====================

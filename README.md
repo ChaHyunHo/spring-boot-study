@@ -211,6 +211,26 @@ pom.xml   // 메이븐 프로젝트를 터미널에서 mvn install하여 로컬�
 		● spring.profiles.active 어떤 프로파일을 추가할 것인가? 
 		● spring.profiles.include 프로파일용 프로퍼티 
 		● application-{profile}.properties 
+		
+		
+# 로깅
+	스프링 부트는 Commons Logging 또는 SLF4j를 사용한다.
+	Commons Logging, SLF4j 둘 중 아무거나 사용해도 상관없다.
+	Commons Logging을 써도 SLF4j로 가게되고 SLF4j가 Logback으로
+	가게된다. 최종적으로 Logback을 사용하게되는 것이다.
+	스프링 부트 프로젝트를 생성하고 바로 서버를 실행할경우 사용되는
+	로그도 logback인 것이다. 
+	
+	스프링 부트 기본 로그 포맷형태
+	날짜 | 시간 | 로그레벨 | PID | --- | 쓰레드 이름 | package 경로 class 이름 | 메세지 
+	
+	날짜 및 시간: 밀리초 단위 정확하고 쉽게 정렬할 수 있음.
+	Log Level: ERROR, WARN, INFO, DEBUG, or TRACE.
+	프로세스 ID.
+	--- 실제 로그 메시지의 시작을 구분하는 구분자.
+	스레드 이름: 대괄호로 묶음(콘솔 출력의 경우 잘릴 수 있음)
+	로거 이름: 이것은 보통 소스 클래스 이름(흔히 약칭)이다.
+	로그 메시지.
     
   
 	
