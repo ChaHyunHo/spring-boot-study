@@ -10,8 +10,8 @@ public class SampleController {
 	@Autowired
 	private SampleService sampleService;
 	
-	@GetMapping("/hello")
-	public String hello() {
-		return "hello"+" "+ sampleService.getName();
+	@GetMapping("/bye")
+	public String bye() {
+		return "bye"+ " " + sampleService.getName();
 	}
 }
