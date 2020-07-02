@@ -14,4 +14,10 @@ public class SampleController {
 	public String bye() {
 		return "bye"+ " " + sampleService.getName();
 	}
+	
+	
+	@GetMapping("/hi")
+	public String hihello() {
+		return "hi"+ " " + sampleService.getName();
+	}
 }

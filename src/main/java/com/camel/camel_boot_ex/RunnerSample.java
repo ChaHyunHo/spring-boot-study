@@ -8,6 +8,8 @@ import org.springframework.boot.ApplicationRunner;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
+import com.camel.camel_boot_ex.sample.SampleService;
+
 import lombok.extern.log4j.Log4j2;
 
 @Component
@@ -22,6 +24,9 @@ public class RunnerSample implements ApplicationRunner {
 	
 	@Autowired
 	private String hello;
+	
+	@Autowired
+	private SampleService sampleService;
 	
 	@Override
 	public void run(ApplicationArguments args) throws Exception {
@@ -42,5 +47,10 @@ public class RunnerSample implements ApplicationRunner {
 		logger.debug(nameProperties.getName());
 		logger.debug(nameProperties.getFullName());
 		System.out.println("=====================================");
+		
+		
+		System.out.println("====================== 빈 테스트");
+		log.info(sampleService.getName());
+		System.out.println("=================================");
 	}
 }

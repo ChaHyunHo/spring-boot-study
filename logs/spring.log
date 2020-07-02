@@ -7939,3 +7939,33 @@ Unconditional classes:
 2020-07-01 14:39:43.717  INFO 26264 --- [main] c.c.c.RunnerSample                       : =====================
 2020-07-01 14:39:43.717 DEBUG 26264 --- [main] c.c.c.RunnerSample                       : hyunho test
 2020-07-01 14:39:43.718 DEBUG 26264 --- [main] c.c.c.RunnerSample                       : chahyunho
+2020-07-01 18:31:32.920  INFO 13336 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-07-01 18:31:32.963  INFO 13336 --- [RMI TCP Connection(2)-127.0.0.1] io.undertow                              : stopping server: Undertow - 2.1.3.Final
+2020-07-01 18:31:32.993  INFO 13336 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-01 18:31:35.534  INFO 20268 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-07-01 18:31:35.583  INFO 20268 --- [RMI TCP Connection(2)-127.0.0.1] io.undertow                              : stopping server: Undertow - 2.1.3.Final
+2020-07-01 18:31:35.612  INFO 20268 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-01 18:31:38.198  INFO 24564 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-07-01 18:31:38.246  INFO 24564 --- [RMI TCP Connection(2)-127.0.0.1] io.undertow                              : stopping server: Undertow - 2.1.3.Final
+2020-07-01 18:31:38.273  INFO 24564 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-01 18:31:40.833  INFO 19120 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-07-01 18:31:40.869  INFO 19120 --- [RMI TCP Connection(2)-127.0.0.1] io.undertow                              : stopping server: Undertow - 2.1.3.Final
+2020-07-01 18:31:40.894  INFO 19120 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-01 18:31:43.440  INFO 3676 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-07-01 18:31:43.470  INFO 3676 --- [RMI TCP Connection(2)-127.0.0.1] io.undertow                              : stopping server: Undertow - 2.1.3.Final
+2020-07-01 18:31:43.494  INFO 3676 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-01 18:31:46.050  INFO 22836 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-07-01 18:31:46.058 DEBUG 22836 --- [RMI TCP Connection(2)-127.0.0.1] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@15d49048, started on Wed Jul 01 13:15:24 KST 2020
+2020-07-01 18:31:46.084 DEBUG 22836 --- [RMI TCP Connection(2)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2020-07-01 18:31:46.086 DEBUG 22836 --- [RMI TCP Connection(2)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Bean 'webServerGracefulShutdown' completed its stop procedure
+2020-07-01 18:31:46.086 DEBUG 22836 --- [RMI TCP Connection(2)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483646
+2020-07-01 18:31:46.089  INFO 22836 --- [RMI TCP Connection(2)-127.0.0.1] io.undertow                              : stopping server: Undertow - 2.1.3.Final
+2020-07-01 18:31:46.109 DEBUG 22836 --- [RMI TCP Connection(2)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Bean 'webServerStartStop' completed its stop procedure
+2020-07-01 18:31:46.113 DEBUG 22836 --- [RMI TCP Connection(2)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2020-07-01 18:31:46.116  INFO 22836 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-01 18:31:48.728  INFO 22780 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-07-01 18:31:48.799  INFO 22780 --- [RMI TCP Connection(2)-127.0.0.1] io.undertow                              : stopping server: Undertow - 2.1.3.Final
+2020-07-01 18:31:48.839  INFO 22780 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-01 18:31:51.388  INFO 26636 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-07-01 18:31:51.423  INFO 26636 --- [RMI TCP Connection(2)-127.0.0.1] io.undertow                              : stopping server: Undertow - 2.1.3.Final
+2020-07-01 18:31:51.456  INFO 26636 --- [RMI TCP Connection(2)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
