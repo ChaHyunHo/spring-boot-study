@@ -7,7 +7,7 @@ public class SampleService {
 
 	public String getName() {
 		// TODO Auto-generated method stub
-		return "hyunho";
+		return "hyunho 1111";
 	}
 
 }

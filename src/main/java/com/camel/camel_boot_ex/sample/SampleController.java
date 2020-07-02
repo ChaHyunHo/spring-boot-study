@@ -19,7 +19,6 @@ public class SampleController {
 		return "bye"+ " " + sampleService.getName();
 	}
 	
-	
 	@GetMapping("/hi")
 	public String hihello() {
 		logger.info("test0");
